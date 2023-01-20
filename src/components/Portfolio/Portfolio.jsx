@@ -5,7 +5,9 @@ import Projects from './Projects'
 const Portfolio = () => {
   return (
     <Box
-      bg="brand.200"
+      id="portfolio"
+      minH="100vh"
+      bg="brand.100"
       px={4}
       py="75px"
       display="flex"

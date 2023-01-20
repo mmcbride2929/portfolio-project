@@ -8,8 +8,8 @@ const Title = () => {
           pos="relative"
           pb={{
             base: 8,
-            sm: 16,
-            md: 20,
+            sm: 18,
+
             lg: 28,
             xl: 32,
           }}
@@ -77,20 +77,18 @@ const Title = () => {
                 }}
                 mb={6}
                 fontSize={{
-                  base: '0.8rem',
-                  sm: '1.1rem',
+                  base: '0.9rem',
+                  sm: '1rem',
                 }}
                 color="brand.200"
                 lineHeight="base"
-                fontWeight="500"
+                fontWeight="400"
                 maxW="650px"
               >
                 {' '}
                 As a full-stack web developer, I am experienced in utilizing
                 technologies such as React, Node.js, and MongoDB to build
-                scalable and visually appealing websites. In my free time, I
-                enjoy outdoor activities such as fishing and hiking, as well as
-                staying informed on the latest stock market trends.
+                scalable and visually appealing websites and apps.
               </chakra.p>
               <Stack
                 direction={{
@@ -106,7 +104,7 @@ const Title = () => {
                 }}
                 justifyContent="center"
               >
-                <Box rounded="full" shadow="md">
+                <Box shadow="md">
                   <chakra.a
                     w={{ base: '100px', sm: '125px' }}
                     h="40px"
@@ -119,9 +117,9 @@ const Title = () => {
                     }}
                     rounded="md"
                     color="brand.400"
-                    bg="brand.100"
+                    bg="brand.200"
                     _hover={{
-                      bg: 'brand.200',
+                      bg: 'silver',
                       color: 'brand.400',
                     }}
                     px={{
@@ -133,8 +131,11 @@ const Title = () => {
                       md: 4,
                     }}
                     cursor="pointer"
+                    href="https://github.com/mmcbride2929"
+                    rel="noopener noreferrer"
+                    target="_blank"
                   >
-                    Projects{' '}
+                    Github{' '}
                   </chakra.a>
                 </Box>
                 <Box mt={[3, 0]} ml={[null, 3]}>
@@ -159,12 +160,13 @@ const Title = () => {
                     }}
                     rounded="md"
                     color="brand.400"
-                    bg="brand.100"
+                    bg="brand.200"
                     _hover={{
-                      bg: 'brand.200',
+                      bg: 'silver',
                       color: 'brand.400',
                     }}
                     cursor="pointer"
+                    href={`mailto:mmcbride2929@gmail.com`}
                   >
                     Contact
                   </chakra.a>

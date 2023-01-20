@@ -4,3 +4,38 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+/* header page */
+.header-arrow-down {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* project component */
+
+.demo-icon {
+  width: 45px;
+  height: 25px;
+  color: #001220;
+  font-weight: 600;
+  background-color: 'brand.400';
+}
+
+.demo-icon:hover {
+  color: silver;
+  cursor: pointer;
+}
+
+.github-icon {
+  width: 25px;
+  height: 25px;
+  fill: #001220;
+  background-color: 'brand.400';
+}
+
+.github-icon:hover {
+  fill: silver;
+  cursor: pointer;
+}

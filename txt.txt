@@ -1,5 +1,1 @@
-- fix nav button (mobile position)
-- add smooth scroll + single page takes up screen in entirety (header/contact)
-- portfolio image link to live site
-- have button for live site and GitHub repo
-- have contact button go to email
+COMPLETE .. for now
