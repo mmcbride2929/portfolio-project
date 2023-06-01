@@ -1,39 +1,40 @@
-import fishGridImage from '../../assets/fish-grid.png'
+import chuckImage from '../../assets/chucks-trucks2.png'
 import pokePetImage from '../../assets/poke-pet.png'
-import chucksTrucksImage from '../../assets/chucks-trucks.png'
+import final53 from '../../assets/final53.png'
 import { Box } from '@chakra-ui/react'
 import { useState } from 'react'
 import Project from './Project'
 
 const initialState = [
   {
-    image: fishGridImage,
-    title: 'Fish-Grid',
+    image: chuckImage,
+    title: "Chuck's-Trucks",
     description:
-      'Fish-Grid is a social media application designed for fishing enthusiasts. It was built using the MERN stack and also has added security through JWT authentication. ',
+      "Chucks-Trucks showcases a fictional truck dealership. It features a homepage with ongoing sales, reviews, and details about Chuck's latest offers. Users can browse the inventory, sort vehicles, and submit their info for loan approval.",
 
-    demo: 'https://wondrous-mooncake-8a5351.netlify.app/',
-    github: 'https://github.com/mmcbride2929/Fish-Grid',
+    demo: 'https://chucks-trucks.netlify.app/',
+    github: 'https://github.com/mmcbride2929/Chucks-Trucks-V3',
     id: '001',
   },
+  {
+    image: final53,
+    title: 'Final 53',
+    description:
+      'The roster building app is designed for fans to create a final 53 man roster for any NFL team. Users can select any team, add and cut players, sort by offense & defense, and lastly search for players via the search-bar at the top.',
+
+    demo: 'https://final53.netlify.app/',
+    github: 'https://github.com/mmcbride2929/Roster-Predictor-V2',
+    id: '002',
+  },
+
   {
     image: pokePetImage,
     title: 'Poke-Pet',
     description:
       'Poke-Pet is a interactive Pokemon card generator, made specifically for photos of your pets. It was built using React and styled with Styled-Components.',
 
-    demo: 'https://cranky-davinci-d9d838.netlify.app/',
+    demo: 'https://poke-pet.netlify.app/',
     github: 'https://github.com/mmcbride2929/poke-pet',
-    id: '002',
-  },
-  {
-    image: chucksTrucksImage,
-    title: 'Chucks-Trucks',
-    description:
-      "Chuck's Trucks is a mock car dealership site built using the MERN stack and styled with Chakra UI. I built it as an opportunity to deepen my understanding of the FE/BE relationship and workflow.",
-
-    demo: 'https://aesthetic-choux-7c3aff.netlify.app/',
-    github: 'https://github.com/mmcbride2929/Chucks-Trucks-V3',
     id: '003',
   },
 ]
@@ -43,7 +44,7 @@ const Projects = () => {
 
   return (
     <Box
-      px={{ base: 4, md: 20 }}
+      px={{ base: 4, md: 4 }}
       w="100%"
       display="flex"
       alignItems="center"

@@ -6,7 +6,7 @@ const ContactHeader = () => {
       <chakra.h1
         fontSize={{ base: '2.7rem', sm: '3rem' }}
         fontWeight="600"
-        color="brand.400"
+        color="brand.100"
         display={{
           base: 'block',
         }}
@@ -17,7 +17,7 @@ const ContactHeader = () => {
       <chakra.h2
         fontSize={{ base: '1rem', sm: '1.2rem' }}
         fontWeight="500"
-        color="brand.400"
+        color="brand.100"
         display={{
           base: 'block',
         }}

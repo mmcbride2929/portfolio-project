@@ -12,7 +12,7 @@ const Portfolio = () => {
       py="75px"
       display="flex"
       flexDirection="column"
-      alignItems="center"
+      alignItems="flex-start"
     >
       <PortfolioHeader />
       <Projects />

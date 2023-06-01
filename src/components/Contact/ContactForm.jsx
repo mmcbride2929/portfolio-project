@@ -77,13 +77,13 @@ const ContactForm = () => {
   }
 
   return (
-    <Box px={{ base: '', md: 20 }} maxW="600px" w="100%">
-      <form onSubmit={handleSubmit} ref={form}>
+    <Box px={{ base: '', md: 20 }} maxW="500px" w="100%">
+      <form onSubmit={handleSubmit} ref={form} mb={4}>
         <FormControl isInvalid={errors.name !== ''}>
           <chakra.h3 color="red" m={0} fontSize="0.7rem">
             {errors.name.toUpperCase()}
           </chakra.h3>
-          <FormLabel m={0} fontSize="0.7rem" htmlFor="name">
+          <FormLabel m={0} fontSize="0.7rem" htmlFor="name" mb={2} ml={1}>
             Name
           </FormLabel>
           <Input
@@ -92,24 +92,21 @@ const ContactForm = () => {
             name="user_name"
             type="text"
             placeholder="Enter your name"
-            p={0}
-            m={0}
             mb={2}
             fontSize="0.8rem"
-            border="none"
             maxLength="25"
             minLength="3"
             _focus={{
               boxShadow: 'none',
               outline: 'none',
-              borderBottom: '1px solid silver',
+              border: '1px solid white',
               shadow: 'xl',
               dropShadow: 'xl',
               bg: 'none',
             }}
-            _invalid="none"
-            borderRadius={0}
-            borderBottom="1px solid #e5e5e5"
+            borderRadius={5}
+            border="1px solid 
+            #376288"
           />
         </FormControl>
 
@@ -117,7 +114,7 @@ const ContactForm = () => {
           <chakra.h3 color="red" m={0} fontSize="0.7rem">
             {errors.email.toUpperCase()}
           </chakra.h3>
-          <FormLabel m={0} fontSize="0.7rem" htmlFor="email">
+          <FormLabel m={0} fontSize="0.7rem" htmlFor="email" mb={2} ml={1}>
             Email
           </FormLabel>
           <Input
@@ -126,23 +123,21 @@ const ContactForm = () => {
             id="email"
             type="email"
             placeholder="Enter your email"
-            p={0}
-            m={0}
             mb={2}
             fontSize="0.8rem"
-            border="none"
             maxLength="35"
             minLength="7"
             _focus={{
               boxShadow: 'none',
               outline: 'none',
-              borderBottom: '1px solid silver',
+              border: '1px solid white',
               shadow: 'xl',
               dropShadow: 'xl',
               bg: 'none',
             }}
-            borderRadius={0}
-            borderBottom="1px solid #e5e5e5"
+            borderRadius={5}
+            border="1px solid 
+            #376288"
           />
         </FormControl>
 
@@ -150,33 +145,30 @@ const ContactForm = () => {
           <chakra.h3 color="red" m={0} fontSize="0.7rem">
             {errors.message.toUpperCase()}
           </chakra.h3>
-          <FormLabel m={0} fontSize="0.7rem" htmlFor="message">
+          <FormLabel m={0} fontSize="0.7rem" htmlFor="message" mb={2} ml={1}>
             Message
           </FormLabel>
           <Textarea
             onChange={(e) => setMessage(e.target.value)}
             name="message"
-            h="200px"
+            h="175px"
             id="message"
             placeholder="Enter your message"
             py={4}
-            px={0}
-            m={0}
             mb={2}
             fontSize="0.8rem"
-            border="none"
-            maxLength="250"
             minLength="7"
             _focus={{
               boxShadow: 'none',
               outline: 'none',
-              borderBottom: '1px solid silver',
+              border: '1px solid white',
               shadow: 'xl',
               dropShadow: 'xl',
               bg: 'none',
             }}
-            borderRadius={0}
-            borderBottom="1px solid #e5e5e5"
+            borderRadius={5}
+            border="1px solid 
+            #376288"
           />
         </FormControl>
 
@@ -200,14 +192,16 @@ const ContactForm = () => {
           rounded="md"
           shadow="sm"
           color="brand.400"
-          bg="brand.200"
+          bg="brand.100"
           _hover={{
-            bg: 'silver',
-            color: 'brand.400',
+            bg: 'brand.400',
+            color: 'brand.100',
             shadow: 'md',
+            border: '1px solid white',
           }}
           cursor="pointer"
           type="submit"
+          mb={4}
           fontWeight="400"
         >
           Send

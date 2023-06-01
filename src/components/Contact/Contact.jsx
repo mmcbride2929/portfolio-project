@@ -6,14 +6,14 @@ const Contact = () => {
   return (
     <Box
       id="contact"
-      bg="brand.100"
+      bg="brand.400"
       minH="100vh"
-      px={4}
+      px={8}
       py="75px"
       display="flex"
       flexDirection="column"
       alignItems="center"
-      color="brand.400"
+      color="brand.100"
     >
       <ContactHeader />
       <ContactForm />

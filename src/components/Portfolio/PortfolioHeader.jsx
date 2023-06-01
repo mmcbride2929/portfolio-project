@@ -2,7 +2,14 @@ import { Box, chakra } from '@chakra-ui/react'
 
 const PortfolioHeader = () => {
   return (
-    <Box textAlign="center" mb="50px">
+    <Box
+      textAlign="left"
+      maxW="700px"
+      w="100%"
+      m="0 auto"
+      mb="50px"
+      px={{ base: 4, md: 0 }}
+    >
       <chakra.h1 letterSpacing="tight" lineHeight="short">
         <chakra.span
           fontSize={{ base: '2.7rem', sm: '3rem' }}

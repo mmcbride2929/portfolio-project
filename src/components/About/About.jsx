@@ -4,12 +4,12 @@ import Body from './Body'
 const About = () => {
   return (
     <Box
-      px={4}
+      py={16}
       bg="brand.400"
       id="about"
-      minH="100vh"
       display="flex"
       flexDirection="column"
+      alignItems="center"
       justifyContent="center"
     >
       <Body />

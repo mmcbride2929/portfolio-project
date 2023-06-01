@@ -21,7 +21,7 @@ const Navbar = () => {
           h={12}
           alignItems={'center'}
           justifyContent={{ base: 'flex-start', sm: 'center' }}
-          color="brand.100"
+          color="brand.400"
         >
           <IconButton
             position="absolute"
@@ -47,7 +47,10 @@ const Navbar = () => {
               spacing={4}
               display={{ base: 'none', sm: 'flex' }}
             >
-              <chakra.span cursor="pointer" _hover={{ color: 'silver' }}>
+              <chakra.span
+                cursor="pointer"
+                _hover={{ borderBottom: '1px solid black' }}
+              >
                 <Link
                   to="portfolio"
                   smooth={true}
@@ -56,14 +59,15 @@ const Navbar = () => {
                   py={1}
                   fontSize="0.8rem"
                   fontWeight="600"
-                  _hover={{
-                    textDecoration: 'none',
-                  }}
+                  _hover={{ borderBottom: '1px solid black' }}
                 >
                   PROJECTS
                 </Link>
               </chakra.span>
-              <chakra.span cursor="pointer" _hover={{ color: 'silver' }}>
+              <chakra.span
+                cursor="pointer"
+                _hover={{ borderBottom: '1px solid black' }}
+              >
                 <Link
                   to="about"
                   smooth={true}
@@ -81,7 +85,10 @@ const Navbar = () => {
                   ABOUT
                 </Link>
               </chakra.span>
-              <chakra.span cursor="pointer" _hover={{ color: 'silver' }}>
+              <chakra.span
+                cursor="pointer"
+                _hover={{ borderBottom: '1px solid black' }}
+              >
                 <Link
                   to="contact"
                   smooth={true}
@@ -90,10 +97,7 @@ const Navbar = () => {
                   py={1}
                   fontSize="0.8rem"
                   fontWeight="500"
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'silver',
-                  }}
+                  _hover={{ borderBottom: '1px solid black' }}
                 >
                   CONTACT
                 </Link>

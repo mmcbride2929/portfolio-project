@@ -9,7 +9,7 @@ import {
   Stack,
   CardFooter,
 } from '@chakra-ui/react'
-import { FiExternalLink } from 'react-icons/fi'
+import { BsArrowRightShort } from 'react-icons/bs'
 import { BsGithub } from 'react-icons/bs'
 
 const Project = ({ project }) => {
@@ -37,6 +37,7 @@ const Project = ({ project }) => {
         maxW={{ base: '100%', sm: '225px', md: '250px' }}
         src={image}
         cursor="pointer"
+        px={{ base: 5, sm: 0 }}
       />
 
       <Stack>
@@ -60,21 +61,29 @@ const Project = ({ project }) => {
           justifyContent={{ base: 'flex-end', md: 'flex-end' }}
         >
           <chakra.a
-            href={demo}
-            rel="noopener noreferrer"
-            mx={'10px'}
-            target="_blank"
-          >
-            <FiExternalLink className="demo-icon" />
-          </chakra.a>
-
-          <chakra.a
             href={github}
             rel="noopener noreferrer"
             target="_blank"
             mx={'10px'}
           >
             <BsGithub className="github-icon" />
+          </chakra.a>
+
+          <chakra.a
+            href={demo}
+            rel="noopener noreferrer"
+            mx={'1px'}
+            target="_blank"
+          >
+            <Box
+              className="demo-icons"
+              display="flex"
+              borderBottom="1px solid white"
+              _hover={{ color: 'silver' }}
+            >
+              <chakra.span>Demo</chakra.span>
+              <BsArrowRightShort className="demo-icon" />
+            </Box>
           </chakra.a>
         </CardFooter>
       </Stack>

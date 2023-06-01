@@ -1,21 +1,14 @@
 import { Box } from '@chakra-ui/react'
 import Navbar from './Navbar'
 import Title from './Title'
-import { BsFillArrowDownCircleFill } from 'react-icons/bs'
-import { Link } from 'react-scroll'
+import About from '../About/About'
+
 const Header = () => {
   return (
-    <Box px={4} position="relative" bg="brand.400" minH="100vh">
+    <Box px={0} position="relative" bg="brand.100">
       <Navbar />
       <Title />
-      <Link to="portfolio" smooth={true} duration={500}>
-        <BsFillArrowDownCircleFill
-          fill="#fff"
-          size="35px"
-          className="header-arrow-down"
-          cursor="pointer"
-        />
-      </Link>
+      <About />
     </Box>
   )
 }

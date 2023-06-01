@@ -11,9 +11,7 @@ const App = () => {
     <Box bg="#001220">
       <ChakraProvider theme={myTheme}>
         <Header />
-
         <Portfolio />
-        <About />
         <Contact />
         <Footer />
       </ChakraProvider>
