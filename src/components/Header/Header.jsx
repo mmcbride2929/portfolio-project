@@ -5,7 +5,7 @@ import About from '../About/About'
 
 const Header = () => {
   return (
-    <Box px={0} position="relative" bg="brand.100">
+    <Box position="relative" bg="brand.100">
       <Navbar />
       <Title />
       <About />

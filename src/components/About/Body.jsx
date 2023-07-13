@@ -41,10 +41,10 @@ const Body = () => {
             color="brand.100"
             textAlign="left"
           >
-            Since I can remember i have used a computer everday, which sparked
-            my curiosity and led me to begin learning to code. Whether it was
-            creating game bots or customizing HTML for my Myspace layouts, as I
-            learned more I found myself enjoying my new found hobby
+            When I'm not programming, I am enjoying outdoor activities, watching
+            sports, and trying different local restaurants. Lately, in my spare
+            time, I've been doing a lot of river fishing for catfish and
+            building sports apps.
           </chakra.p>
 
           <chakra.p
@@ -64,38 +64,18 @@ const Body = () => {
             color="brand.100"
             textAlign="left"
           >
-            Lately, my favorite programming activity has been crafting small
-            sports apps. I enjoy watching sports and working with the stats can
-            be really enjoyable. One of my biggest goals is to create and
-            maintain my own sports app.
-          </chakra.p>
-          <chakra.p
-            mt={{
-              base: 3,
-              sm: 5,
-              md: 5,
-            }}
-            mx={{
-              sm: 'auto',
-              md: '0',
-            }}
-            maxW={{ base: '700px', md: '350px' }}
-            fontSize={{
-              base: '0.9rem',
-            }}
-            color="brand.100"
-            textAlign="left"
-          >
-            When I'm not diving into development, you'll likely find me
-            outdoors, indulging in my lifelong passion for fishing. It's not
-            just a hobby for me; it's a way to bring friends together and enjoy
-            each other's company.
+            Growing up, I spent a lot of time playing PC games with my friends.
+            I loved the challenge and excitement of the games, but I often found
+            that they took too much time to progress. This gave me the idea of
+            automating gameplay, which led me to discover building bots and
+            ultimately programming. Ever since, I have turned a challenging
+            hobby into a fun and rewarding career.
           </chakra.p>
         </Box>
         <Image
           src={photo}
           borderRadius={2}
-          w={{ base: '100%', sm: '300px' }}
+          w={{ base: '100%', md: '300px' }}
           px={{ base: 5, sm: 0 }}
         />
       </Flex>

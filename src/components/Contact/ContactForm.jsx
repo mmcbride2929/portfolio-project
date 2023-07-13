@@ -80,7 +80,7 @@ const ContactForm = () => {
     <Box px={{ base: '', md: 20 }} maxW="500px" w="100%">
       <form onSubmit={handleSubmit} ref={form} mb={4}>
         <FormControl isInvalid={errors.name !== ''}>
-          <chakra.h3 color="red" m={0} fontSize="0.7rem">
+          <chakra.h3 color="red" m={1} fontSize="0.7rem">
             {errors.name.toUpperCase()}
           </chakra.h3>
           <FormLabel m={0} fontSize="0.7rem" htmlFor="name" mb={2} ml={1}>
@@ -111,7 +111,7 @@ const ContactForm = () => {
         </FormControl>
 
         <FormControl mt={4}>
-          <chakra.h3 color="red" m={0} fontSize="0.7rem">
+          <chakra.h3 color="red" m={1} fontSize="0.7rem">
             {errors.email.toUpperCase()}
           </chakra.h3>
           <FormLabel m={0} fontSize="0.7rem" htmlFor="email" mb={2} ml={1}>
@@ -142,7 +142,7 @@ const ContactForm = () => {
         </FormControl>
 
         <FormControl mt={4}>
-          <chakra.h3 color="red" m={0} fontSize="0.7rem">
+          <chakra.h3 color="red" m={1} fontSize="0.7rem">
             {errors.message.toUpperCase()}
           </chakra.h3>
           <FormLabel m={0} fontSize="0.7rem" htmlFor="message" mb={2} ml={1}>
@@ -188,15 +188,15 @@ const ContactForm = () => {
             base: 3,
             md: 4,
           }}
-          border="solid 1px transparent"
+          border="solid 1px #376288"
           rounded="md"
           shadow="sm"
-          color="brand.400"
-          bg="brand.100"
+          color="brand.100"
+          bg="brand.400"
           _hover={{
             bg: 'brand.400',
             color: 'brand.100',
-            shadow: 'md',
+
             border: '1px solid white',
           }}
           cursor="pointer"

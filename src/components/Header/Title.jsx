@@ -5,7 +5,12 @@ import { MdEmail } from 'react-icons/md'
 
 const Title = () => {
   return (
-    <Box pos="relative" overflow="hidden" paddingTop="25px">
+    <Box
+      pos="relative"
+      overflow="hidden"
+      p={{ base: 4, sm: 0 }}
+      paddingTop={{ base: '5px', md: '25px' }}
+    >
       <Box maxW="900px" mx="auto">
         <Box
           display="flex"
@@ -47,7 +52,7 @@ const Title = () => {
                     Hi, my name is
                   </chakra.span>
                   <chakra.span
-                    fontSize={{ base: '2.2rem', sm: '2.5rem' }}
+                    fontSize={{ base: '2rem', sm: '2.5rem' }}
                     fontWeight="700"
                     display={{
                       base: 'block',
@@ -67,9 +72,9 @@ const Title = () => {
                   maxW="700px"
                 >
                   {' '}
-                  and i'm a web developer based in Columbus, Ohio. I work
-                  primarily with the MERN stack, as well as a variety of other
-                  front end and back end technologies. revise obvviously
+                  and I'm a web developer based in Columbus, Ohio. With a focus
+                  on the MERN stack, I specialize in creating engaging
+                  full-stack web applications.
                 </chakra.p>
                 <Stack
                   direction={{

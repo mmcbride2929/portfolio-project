@@ -24,6 +24,7 @@ const Navbar = () => {
           color="brand.400"
         >
           <IconButton
+            zIndex={99}
             position="absolute"
             top="15px"
             left="2px"
@@ -111,12 +112,14 @@ const Navbar = () => {
             position="absolute"
             top="0px"
             left="0px"
-            py={4}
+            py={6}
             display={{ base: 'flex', sm: 'none' }}
             color="brand.100"
             w="100%"
             flexDirection={{ base: 'column', sm: 'none' }}
             alignItems={{ base: 'center', sm: 'none' }}
+            bg="brand.400"
+            zIndex={98}
           >
             <Stack as={'nav'} spacing={4} textAlign="center">
               <chakra.span
@@ -127,7 +130,6 @@ const Navbar = () => {
                   rounded: 'sm',
                   cursor: 'pointer',
                 }}
-                zIndex={99}
                 p="5px"
               >
                 <Link

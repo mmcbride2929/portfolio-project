@@ -1,11 +1,32 @@
 import chuckImage from '../../assets/chucks-trucks2.png'
-import pokePetImage from '../../assets/poke-pet.png'
+import ferguson from '../../assets/Ferguson.png'
 import final53 from '../../assets/final53.png'
 import { Box } from '@chakra-ui/react'
 import { useState } from 'react'
 import Project from './Project'
 
 const initialState = [
+  {
+    image: ferguson,
+    title: 'Ferguson Inc.',
+    description:
+      'A static website for a general construction business, built with React and styled with Tailwind CSS. The site features a contact form, call now functionality, and is optimized for both mobile and desktop devices.',
+
+    demo: 'https://fergusoninc.netlify.app',
+    github: 'https://github.com/mmcbride2929/FergusonInc',
+    id: '001',
+  },
+  {
+    image: final53,
+    title: 'Final 53',
+    description:
+      'This roster building app is designed for fans to create a final 53 man roster for any NFL team. Users can select any team, add and cut players, sort by offense & defense, and lastly search for players via the search-bar at the top.',
+
+    demo: 'https://final53.netlify.app/',
+    github: 'https://github.com/mmcbride2929/Roster-Predictor-V2',
+    id: '002',
+  },
+
   {
     image: chuckImage,
     title: "Chuck's-Trucks",
@@ -14,27 +35,6 @@ const initialState = [
 
     demo: 'https://chucks-trucks.netlify.app/',
     github: 'https://github.com/mmcbride2929/Chucks-Trucks-V3',
-    id: '001',
-  },
-  {
-    image: final53,
-    title: 'Final 53',
-    description:
-      'The roster building app is designed for fans to create a final 53 man roster for any NFL team. Users can select any team, add and cut players, sort by offense & defense, and lastly search for players via the search-bar at the top.',
-
-    demo: 'https://final53.netlify.app/',
-    github: 'https://github.com/mmcbride2929/Roster-Predictor-V2',
-    id: '002',
-  },
-
-  {
-    image: pokePetImage,
-    title: 'Poke-Pet',
-    description:
-      'Poke-Pet is a interactive Pokemon card generator, made specifically for photos of your pets. It was built using React and styled with Styled-Components.',
-
-    demo: 'https://poke-pet.netlify.app/',
-    github: 'https://github.com/mmcbride2929/poke-pet',
     id: '003',
   },
 ]

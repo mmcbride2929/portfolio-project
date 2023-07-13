@@ -8,7 +8,7 @@ const PortfolioHeader = () => {
       w="100%"
       m="0 auto"
       mb="50px"
-      px={{ base: 4, md: 0 }}
+      px={{ base: 4, sm: 4 }}
     >
       <chakra.h1 letterSpacing="tight" lineHeight="short">
         <chakra.span

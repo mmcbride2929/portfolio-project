@@ -24,7 +24,7 @@ const Project = ({ project }) => {
       border="none"
       borderBottom="1.5px solid silver"
       borderRadius={0}
-      direction={{ base: 'column', sm: 'row' }}
+      direction={{ base: 'column', md: 'row' }}
       overflow="hidden"
       variant="outline"
       mb="50px"
@@ -33,15 +33,16 @@ const Project = ({ project }) => {
     >
       <Image
         onClick={handleClick}
-        objectFit="cover"
-        maxW={{ base: '100%', sm: '225px', md: '250px' }}
+        objectFit="contain"
+        maxW={{ base: '100%', sm: '100%', md: '275px' }}
         src={image}
         cursor="pointer"
-        px={{ base: 5, sm: 0 }}
+        px={{ base: 0, sm: 0 }}
       />
 
       <Stack>
         <CardBody
+          px={{ base: 0, md: 4 }}
           color="brand.400"
           minW={{ base: '300px', sm: '240px', md: '250px' }}
           textAlign={{ base: 'left', md: 'left' }}
